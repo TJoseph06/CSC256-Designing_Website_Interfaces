@@ -17,13 +17,22 @@
     <main>
         <section>
             <h2>My information:</h2>
-            <div>Major: Advancing Computer Science</div>
-            <div>Email: Yadayada</div>
-            <div>Expected Graduation Date:</div>
+            <div id="divMajor"></div>
+            <div id="divEmail"></div>
+            <div id="divGradDate"></div>
         </section>
         <section>
-            <img src="./im" alt="coding" class="img-code">
+            <img src="./Images/index coding image.gif" alt="coding" class="img-code">
         </section>
     </main>
+
+    <!-- include a reference tot the external JS File -->
+    <script src="externaljs.js"></script>
+
+    <!-- This script section will let us call the code to add the values/text to our page -->
+    <script>
+        // call the function
+        loadInfo();
+    </script>
 </body>
 </html>
