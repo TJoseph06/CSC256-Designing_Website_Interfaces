@@ -20,6 +20,21 @@ header{
     text-align: center;
 }
 
+button{
+    background-color: black;
+    color:aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-size: medium;
+}
+
+button:hover{
+    color:black;
+    background-color:aliceblue;
+}
+
 .img-code{
     width: 30%;
     border: 2px solid blue;
