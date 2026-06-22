@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero information</title>
+    <link href="GameStats.css" rel="stylesheet">
+    <link href="hero.css" rel="stylesheet">
+    <script src="GameStats.js"></script>
+</head>
+<body>
+    <!-- header section for any page title, menu, logo -->
+     <header>
+        <!-- page title -->
+         <h1>Hero Stats</h1>
+     </header>
+
+     <!-- core content of the page can go in the main tag -->
+      <main>
+        <div>
+        <!-- We will get the inputs for the hero's info -->
+         <form name="frmHero" id="frmHero">
+            <div>
+                <label for="txtUserName">User Name: </label>
+                <input type="text" id="txtUserName" name="txtUserName" placeholder="User Name">
+            </div>
+            <div>
+                <label for="txtWeapons">Weapons: </label>
+                <input type="text" id="txtWeapons" name="txtWeapons" placeholder="Weapons">
+            </div>
+            <div>
+                <label for="numHealthDamage">Health/Damage: </label>
+                <input type="number" id="numHealthDamage" name="numHealthDamage" placeholder="HealthDamage">
+            </div>
+            <div>
+                <label for="numPointTotal">PointTotal: </label>
+                <input type="number" id="numPointTotal" name="numPointTotal" placeholder="PointTotal">
+            </div>
+
+            <!-- add the type of button so the form does not try to save -->
+             <button type="button" onclick="saveInfo()">Save Hero!</button>
+         </form>
+         </div>
+         <div>
+            <h2>Hero Info:</h2>
+            <div>
+            <textarea id="textaHero" name="textaHero" readonly rows="8" cols="30"></textarea>
+            </div>
+         </div>
+      </main>
+</body>
+</html>

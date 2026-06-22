@@ -1,0 +1,37 @@
+body{
+    background-color: gold;
+    color: blue;
+    margin: 0 auto;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div{
+    color: blue;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color:blue;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    font-size: large;
+}
+
+button:hover{
+    color: gold;
+    background-color:black;
+}
