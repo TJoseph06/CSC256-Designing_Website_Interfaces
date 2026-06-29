@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Crossword Puzzle</title>
+
+    <!-- TODO: move the CSS to an external file -->
+     <style>
+        table, tr{
+            border: 3px solid black;
+            border-radius: 8px;
+            /* This will cause multiple borders in the same spot to collapse into a single border */
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 1px;
+            background-color: blanchedalmond;
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 4px;
+            /* this will; allow us to put numbers in the top corner for the clues */
+            position: relative;
+        }
+
+        input{
+            width: 90%;
+            height: 90%;
+            border: none;
+            text-align: center;
+            /* this should center teh textbox within the td */
+            margin: 0 auto;
+        }
+
+        .clue-number{
+            position: absolute;
+            color: black;
+            font-size: 14px;
+            top: 0;
+            left: 0;
+        }
+     </style>
+
+        <script src="crossword.js" defer>
+            
+        </script>
+</head>
+<body>
+    <header>
+        <h1>Animal Crossword Puzzle</h1>
+    </header>
+    <main>
+        <!-- this is where we will define the table that will hold the crossword puzzle -->
+         <table id="puzzle"></table>
+
+         <h2>Clues:</h2>
+         <h3>Across:</h3>
+         <ol>
+            <li>Feline friend that you keep at home</li>
+            <li>Might wake you up with a wagging tail, licking, or barking</li>
+         </ol>
+         <h3>Down:</h3>
+         <ol>
+            <li>The "fastest" green shelled buddy you'll ever meet</li>
+         </ol>
+    </main>
+
+    
+</body>
+</html>
